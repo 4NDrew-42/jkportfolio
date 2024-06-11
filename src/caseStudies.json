@@ -1,11 +1,11 @@
 {
   "caseStudies": [
     {
-      "title": "Pokédex JavaScript Application",
+      "title": "Pokédex",
+      "subtitle": "Frontend for the official PokeAPI",
       "overview": "The Pokédex project is a dynamic web application developed to provide users with a detailed interactive database of Pokémon characters. This application uses HTML, CSS, and JavaScript to create an engaging user interface that interacts with an external Pokémon API to load and display data dynamically.",
       "purposeAndContext": "The main objective was to develop a functional web application that not only reinforces JavaScript skills but also demonstrates the ability to integrate with external APIs and present data in an accessible and user-friendly manner. This project serves as a practical showcase of frontend web development skills suitable for inclusion in a professional portfolio.",
       "objective": "To build a small, responsive web application that allows users to explore a database of Pokémon characters. The app utilizes HTML, CSS, and JavaScript to fetch data from an external API and enables users to view detailed information about each Pokémon.",
-      "credits": "I was responsible for the entire development process of the Pokédex application, including design, implementation, and testing.",
       "toolsSkillsMethodologies": {
         "technologies": ["HTML", "CSS", "JavaScript", "RESTful APIs"],
         "tools": ["Visual Studio Code", "GitHub", "Chrome DevTools"],
@@ -43,22 +43,22 @@
         "finalSolution": "The Pokédex application met all project objectives, providing a fully functional and interactive interface for users to explore and learn about Pokémon. It effectively demonstrates the use of modern web technologies and API integration in creating real-world applications.",
         "reflections": "Successfully integrated with an external API to fetch and display data dynamically. The application's interface was well-received for its usability and aesthetic design. Managing API limitations and ensuring cross-browser compatibility were significant challenges that were effectively overcome through strategic planning and testing. Plans to expand the application include integrating additional APIs to include more comprehensive Pokémon data and implementing advanced search and filtering capabilities."
       },
-        "icon": "images/pokedex/icon.png",
+      "icon": "images/pokedex/icon.png",
       "images": [
         "images/pokedex/screenshot1.png",
         "images/pokedex/screenshot2.png",
         "images/pokedex/screenshot3.png"
       ],
-      "githubRepo": "https://github.com/4NDrew-42/CF1_10/tree/Sub",
-      "url": "https://pokedex-five-alpha.vercel.app/"
+      "githubRepo": "https://github.com/4NDrew-42/CF1_10",
+      "url": "https://pokedex-five-alpha.vercel.app/",
+      "thumbnail": "images/pokedex/pokedex_thumb.png"
     },
-    
     {
       "title": "Meet App",
+      "subtitle": "Serverless PWA for Event Management",
       "overview": "The Meet App is a serverless, progressive web application (PWA) built using React and the test-driven development (TDD) technique. It fetches upcoming events using the Google Calendar API, allowing users to search for events in various cities, view event details, and visualize event data through charts.",
       "purposeAndContext": "The Meet App was created to demonstrate the capabilities of serverless architecture combined with progressive web app features, providing users with a seamless, high-performance experience both online and offline. Serverless and PWAs are considered the future of web development, offering benefits like instant loading, offline support, and easy scalability.",
       "objective": "The goal was to build a PWA that allows users to search for events in various cities, view event details, and visualize event data through charts. The app also aimed to showcase the benefits of serverless architecture, including easy scalability and zero backend maintenance.",
-      "credits": "I was the sole developer of the project, responsible for both the frontend and backend implementations.",
       "toolsSkillsMethodologies": {
         "technologies": ["React", "AWS Lambda", "Google Calendar API", "OAuth2"],
         "tools": ["GitHub", "GitHub Pages", "Lighthouse", "Jest for testing"],
@@ -131,14 +131,16 @@
         "images/meetapp/screenshot3.png"
       ],
       "githubRepo": "https://github.com/4NDrew-42/meet/tree/gh-pages",
-      "url": "https://4ndrew-42.github.io/meet/"
+      "url": "https://4ndrew-42.github.io/meet/",
+      "thumbnail": "images/meetapp/thumbnail.png"
     },
     {
-      "title": "React Native Mobile Chat App",
+      
+      "title": "ChatApp",
+      "subtitle": "Realtime messaging with Image and Location Sharing",
       "overview": "The React Native Mobile Chat App is a dynamic and feature-rich application designed for mobile devices. It allows users to communicate in real-time, share images, and send location data. Developed using React Native and Expo, the app leverages Google Firestore Database for data storage and Firebase for authentication, showcasing a complete mobile development cycle from conception to deployment.",
       "purposeAndContext": "The goal of this project was to create a robust and interactive mobile chat application that demonstrates proficiency in mobile development using JavaScript. The app is designed to provide a seamless user experience on both iOS and Android platforms, reflecting modern development practices in building high-quality, cross-platform mobile applications.",
       "objective": "To build a native chat application using React Native and Expo, providing features such as real-time messaging, image sharing, and location data exchange, all backed by a reliable and scalable backend with Google Firestore and Firebase authentication.",
-      "credits": "I spearheaded the development of the mobile chat application, covering all aspects from initial setup and development to testing and deployment.",
       "toolsSkillsMethodologies": {
         "technologies": ["React Native", "Expo", "Google Firestore", "Firebase", "Gifted Chat"],
         "tools": ["Visual Studio Code", "GitHub", "Expo CLI", "Firebase Console", "Android Studio"],
@@ -184,21 +186,20 @@
         "finalSolution": "The React Native Mobile Chat App successfully met all project objectives, delivering a high-quality, cross-platform chat application with real-time messaging, image sharing, and location data functionalities. The app demonstrates advanced mobile development skills and the effective use of modern technologies.",
         "reflections": "The project highlighted the power of React Native and Expo in building cross-platform mobile applications. The seamless integration with Firebase and Firestore enabled robust backend support for real-time features. Managing state and ensuring real-time synchronization across different devices were complex but rewarding challenges. Implementing accessibility features provided valuable insights into inclusive design practices. Future iterations could include additional features like push notifications, enhanced security measures, and more advanced user settings to further improve the app's functionality and user experience."
       },
-       "icon": "images/chatapp/icon.png",
+      "icon": "images/chatapp/icon.png",
       "images": [
         "images/chatapp/screenshot1.png",
         "images/chatapp/screenshot2.png",
         "images/chatapp/screenshot3.png"
       ],
-      "githubRepo": "https://github.com/yourusername/chatapp",
-      "url": "https://yourusername.github.io/chatapp"
+      "githubRepo": "https://github.com/4NDrew-42/CF5-Chat/tree/CF5-5"
     },
     {
       "title": "ArtCine",
+      "subtitle": "Full-Stack Movie Information Management",
       "overview": "The ArtCine project represents a sophisticated full-stack development endeavor, featuring a server-side API and two distinct client-side implementations using React and Angular. This comprehensive approach not only demonstrates the flexibility of modern web technologies but also showcases how different frameworks can be leveraged to achieve similar end goals in diverse ways.",
       "purposeAndContext": "This project was undertaken to showcase advanced skills in both backend and frontend development, emphasizing the ability to integrate seamlessly across different technology stacks. The objective was to provide a robust application that offers a dynamic and interactive experience for managing and viewing movie-related information.",
       "objective": "To create a comprehensive web application called ArtCine, where users can explore and manage information about movies, directors, and genres. The application consists of a RESTful API backend developed using Node.js and Express with a MongoDB database, and two frontend implementations—one in React and another in Angular.",
-      "credits": "I led all aspects of development for this project, including API design, database management, and front-end implementation in both React and Angular frameworks.",
       "toolsSkillsMethodologies": {
         "technologies": ["MongoDB", "Express", "React", "Node.js", "Angular", "JWT", "Mongoose"],
         "tools": ["GitHub", "Heroku", "Postman", "Angular CLI", "MongoDB Atlas"],
@@ -236,14 +237,16 @@
         "finalSolution": "The ArtCine project successfully showcased the full capabilities of modern full-stack development, from server-side logic using Node.js to rich client-side interactions in both React and Angular. This project not only reinforced my technical skills across different technologies but also provided a practical understanding of how different tools and frameworks can be employed to solve similar problems in web development.",
         "reflections": "The dual frontend implementation highlighted the strengths and learning curves associated with React and Angular, providing deep insights into choosing the right tool for specific requirements. The importance of thorough testing and proper deployment strategies was reiterated, proving crucial for the successful launch and operation of web applications. Future iterations will focus on integrating more interactive and real-time features such as WebSocket for live updates. Enhancing the user interface and user experience based on user feedback will be prioritized to ensure the application remains competitive and user-friendly."
       },
-       "icon": "images/artcine/icon.png",
+      "icon": "images/artcine/icon.png",
       "images": [
         "images/artcine/screenshot1.png",
         "images/artcine/screenshot2.png",
         "images/artcine/screenshot3.png"
       ],
-      "githubRepo": "https://github.com/yourusername/artcine",
-      "url": "https://yourusername.github.io/artcine"
+      "githubRepo": "https://github.com/4NDrew-42/ArtCine-Angular/tree/ArtCine",
+      "url": "https://4ndrew-42.github.io/ArtCine-Web/",
+      "url2": "https://yourusername.github.io/artcine-react",
+      "thumbnail": "images/artcine/thumb.png"
     }
   ]
 }

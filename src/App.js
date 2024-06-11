@@ -36,13 +36,13 @@ function App() {
         <Projects openModal={openModal} />
       </section>
       
-      <section id="content">
+      {/* <section id="content">
         <Content />
-      </section>
+      </section> */}
       
-      <section id="clients">
+      {/*<section id="clients">
         <Clients />
-      </section>
+      </section> */}
       
       <section id="footer">
         <Footer />

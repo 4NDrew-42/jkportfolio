@@ -1,34 +1,123 @@
 /* Projects.css */
 .projects {
-  padding: 20px;
+  padding-left: 20px;
   background-color: #f9f9f9;
 }
 
 .carousel-container {
   display: flex;
-  flex-wrap: nowrap;
-  overflow-x: auto;
+  flex-wrap: nowrap; /* Ensures items are in a single row on desktop */
+  gap: 20px;
+  overflow-x: auto; /* Enables horizontal scrolling */
+}
+
+@media (max-width: 600px) {
+  .carousel-container {
+    flex-direction: column;
+    flex-wrap: wrap; /* Ensures items stack vertically on mobile */
+    align-items: center; /* Center align the project cards */
+  }
 }
 
 .project-card {
-  background: #fff;
-  border-radius: 5px;
-  padding: 20px;
+  position: relative;
+  background-color: #eaeaea; /* Slight grey background */
+  border-radius: 20px; /* More rounded corners */
+  min-width: 300px;
+  max-width: 400px;
+  min-height: 500px;
   margin: 10px;
-  min-width: 200px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3); /* Increased darkness and size of drop shadow */
   cursor: pointer;
   transition: transform 0.2s;
+  display: flex;
+  flex-direction: column;
 }
 
 .project-card:hover {
-  transform: scale(1.05);
+  transform: scale(1.02); /* Reduced scaling amount */
+}
+
+.project-thumbnail {
+  width: 100%;
+  height: 200px; /* Adjust height as needed */
+  background-size: cover;
+  background-position: top left;
+  background-repeat: no-repeat;
+  border-top-left-radius: 20px; /* Ensures the image follows the card's rounded corners */
+  border-top-right-radius: 20px;
+}
+
+.project-content {
+  padding: 20px;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: justify;
+}
+
+.title-container {
+  display: flex;
+  align-items: center; /* Align icon and title on the same line */
+}
+
+.project-icon {
+  width: 40px; /* Adjust size as needed */
+  height: 40px; /* Adjust size as needed */
+  border-radius: 10px; /* Slightly rounded corners */
+  margin-right: 10px; /* Space between icon and title */
+  margin-top: -5px; /* Move baseline up by 5px */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Add drop shadow to the icon */
 }
 
 .project-card h3 {
   margin-top: 0;
+  margin-bottom: 5px; /* Reduce margin-bottom to bring subtext closer */
+  font-size: 1.8em; /* Increase title font size */
+  position: relative;
+  flex-grow: 1; /* Ensure the title takes up available space */
+}
+
+.project-card h3::after {
+  content: '';
+  display: block;
+  width: 100%; /* Extend the line to cover the full width */
+  height: 2px; /* Thicker line */
+  background: #ccc;
+  margin-top: 5px;
+}
+
+.project-card h4 {
+  margin: 5px 0 10px 0; /* Adjust margin for subtext closer to the title */
+  font-size: 1em;
 }
 
 .project-card p {
-  margin-bottom: 0;
+  margin-bottom: 10px;
+  flex-grow: 1;
+  font-size: 1em; /* Revert description font size */
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: auto; /* Ensures buttons are at the bottom */
+}
+
+.button {
+  flex: 1;
+  padding: 10px 15px;
+  margin: 5px;
+  background-color: #007bff;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  text-align: center;
+  transition: background-color 0.3s;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.button:hover {
+  background-color: #0056b3;
 }

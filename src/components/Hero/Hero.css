@@ -1,38 +1,22 @@
 .hero {
-  background-size: cover;
-  background-position: center;
-  height: 100vh;
+  height: 50vh; /* Reduced height */
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  color: rgb(255, 255, 255);
-  background-color: black;
-  text-align: center;
+  background-color: #f0f0f0;
   padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.hero img.profile-pic {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%; /* Circular profile picture */
+  margin-bottom: 20px; /* Space between image and text */
 }
 
 .hero h1 {
-  margin-bottom: 20px;
-  font-size: 2.5rem;
-}
-
-.hero p {
-  margin-bottom: 20px;
-  font-size: 1.2rem;
-}
-
-.hero button {
-  padding: 10px 20px;
-  font-size: 1rem;
-  color: #fff;
-  background-color: #007bff;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: background-color 0.3s;
-}
-
-.hero button:hover {
-  background-color: #0056b3;
+  font-size: 2.5em;
+  color: #333;
 }
