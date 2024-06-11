@@ -1,0 +1,20 @@
+.clients {
+  background-color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+.clients h2 {
+  color: #333;
+}
+
+.clients ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.clients li {
+  margin: 10px 0;
+  font-size: 1.2rem;
+  color: #555;
+}

@@ -1,0 +1,27 @@
+.content {
+  background-color: #f8f8f8; /* light gray background */
+  padding: 20px;
+  margin-top: 20px;
+  color: #333;
+}
+
+.content h2 {
+  color: #222;
+  text-align: center;
+}
+
+.category {
+  margin-top: 20px;
+  padding: 10px;
+  background-color: #ffffff; /* white background for categories */
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.category h3 {
+  color: #444;
+}
+
+.category p {
+  color: #666;
+  font-size: 0.9rem;
+}
