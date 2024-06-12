@@ -2,51 +2,59 @@
 
 .case-study {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
   padding: 20px;
   background-color: #f0f0f0;
+  align-items: center; /* Center align the modal content */
 }
 
-.header {
-  width: 100%;
-  text-align: left;
-  margin-bottom: 20px;
-}
-
-.icon-title {
+.modal-header {
   display: flex;
   align-items: center;
+  margin-bottom: 20px;
+  width: 100%;
+  justify-content: center; /* Center align the header */
 }
 
-.large-icon {
+.modal-icon {
   width: 128px;
   height: 128px;
   border-radius: 10px;
-  margin-right: 20px;
+  margin-right: 10px;
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
 }
 
-.title-container {
+.modal-title-container {
   display: flex;
   flex-direction: column;
+  align-items: flex-start; /* Align title container to the left */
 }
 
-.title-container h1 {
+.modal-title-container .modal-title {
   font-size: 2.5em;
   margin-bottom: 5px;
+  font-weight: bold;
+  text-align: left; /* Align title text to the left */
 }
 
-.title-underline {
+.modal-title-container h4 {
+  font-size: 1.5em;
+  color: #666;
+  margin: 0;
+  text-align: left; /* Align subtitle text to the left */
+}
+
+.modal-title-container .underline {
   width: 100%;
-  height: 3px;
+  height: 2px;
   background-color: #ccc;
-  border: none;
-  margin-bottom: 10px;
+  margin-top: 5px;
 }
 
-.title-container h4 {
-  font-size: 1.2em;
-  color: #555;
+.modal-column {
+  width: 80%;
+  margin: 0 auto;
+  text-align: left;
 }
 
 .main-screenshot {
@@ -59,26 +67,26 @@
 .cards-container {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
-  width: 100%;
+  gap: 20px;
+  justify-content: center;
 }
 
 .card {
   background-color: #ffffff;
   border-radius: 10px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  margin-bottom: 20px;
   padding: 20px;
-  width: calc(50% - 10px); /* Ensuring two cards side by side */
-  text-align: left;
+  margin-bottom: 20px;
+  flex: 1 1 calc(50% - 20px); /* Ensure cards do not overflow */
+  box-sizing: border-box;
 }
 
-.card h2 {
+.card h3 {
   font-size: 1.5em;
   margin-bottom: 10px;
 }
 
-.card h3 {
+.card h4 {
   font-size: 1.2em;
   margin-bottom: 5px;
   margin-top: 15px;
@@ -90,16 +98,30 @@
   margin-bottom: 10px;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 1200px) {
   .cards-container {
     flex-direction: column;
   }
+}
 
-  .card {
-    width: 100%;
+@media (max-width: 600px) {
+  .modal-header {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
   }
 
-  .main-screenshot {
-    width: 100%;
+  .modal-header img.modal-icon {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 10px;
+  }
+
+  .modal-title-container .modal-title {
+    font-size: 1.8em;
+  }
+
+  .modal-title-container h4 {
+    font-size: 1.2em;
   }
 }

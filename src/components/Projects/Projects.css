@@ -66,7 +66,9 @@ h2 {
 
 .title-container {
   display: flex;
-  align-items: center; /* Align icon and title on the same line */
+  flex-direction: row; /* Ensure title-container is row-aligned */
+  align-items: center; /* Align items vertically */
+  margin-top: -5px; /* Move baseline up by 5px */
 }
 
 .project-icon {
@@ -74,7 +76,6 @@ h2 {
   height: 40px; /* Adjust size as needed */
   border-radius: 10px; /* Slightly rounded corners */
   margin-right: 10px; /* Space between icon and title */
-  margin-top: -5px; /* Move baseline up by 5px */
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Add drop shadow to the icon */
 }
 
@@ -123,6 +124,10 @@ h2 {
   text-align: center;
   transition: background-color 0.3s;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.button.github-button {
+  background-color: #333; /* GitHub official dark theme color */
 }
 
 .button:hover {

@@ -11,79 +11,77 @@ const CaseStudy = ({ studyId }) => {
 
   return (
     <div className="case-study">
-      <div className="header">
-        <div className="icon-title">
-          <img src={study.icon} alt={`${study.title} icon`} className="large-icon" />
-          <div className="title-container">
-            <h1>{study.title}</h1>
-            <hr className="title-underline" />
-            <h4>{study.subtitle}</h4>
-          </div>
+      <div className="modal-header">
+        <img src={study.icon} alt={`${study.title} icon`} className="modal-icon" />
+        <div className="modal-title-container">
+          <div className="modal-title">{study.title}</div>
+          <h4>{study.subtitle}</h4>
+          <div className="underline"></div>
         </div>
-        <img src={study.images[0]} alt={`${study.title} screenshot`} className="main-screenshot" />
       </div>
+      <div className="modal-column">
+        <img src={study.images[0]} alt={`${study.title} screenshot`} className="main-screenshot" />
+        <div className="cards-container">
+          <div className="card">
+            <h3>Overview, Purpose, and Objective</h3>
+            <p><strong>Overview:</strong> {study.overview}</p>
+            <p><strong>Purpose and Context:</strong> {study.purposeAndContext}</p>
+            <p><strong>Objective:</strong> {study.objective}</p>
+          </div>
 
-      <div className="cards-container">
-        <div className="card">
-          <h2>Overview, Purpose, and Objective</h2>
-          <p><strong>Overview:</strong> {study.overview}</p>
-          <p><strong>Purpose and Context:</strong> {study.purposeAndContext}</p>
-          <p><strong>Objective:</strong> {study.objective}</p>
-        </div>
-        <div className="card">
-          <h2>Tools, Skills, Methodologies</h2>
-          <p><strong>Technologies:</strong> {study.toolsSkillsMethodologies.technologies.join(', ')}</p>
-          <p><strong>Tools:</strong> {study.toolsSkillsMethodologies.tools.join(', ')}</p>
-          <p><strong>Methodologies:</strong> {study.toolsSkillsMethodologies.methodologies.join(', ')}</p>
-        </div>
+          <div className="card">
+            <h3>Tools, Skills, Methodologies</h3>
+            <p><strong>Technologies:</strong> {study.toolsSkillsMethodologies.technologies.join(', ')}</p>
+            <p><strong>Tools:</strong> {study.toolsSkillsMethodologies.tools.join(', ')}</p>
+            <p><strong>Methodologies:</strong> {study.toolsSkillsMethodologies.methodologies.join(', ')}</p>
+          </div>
 
-        <img src={study.images[1]} alt={`${study.title} screenshot`} className="main-screenshot" />
-
-        <div className="card">
-          <h2>Process and Approach</h2>
-          {study.processAndApproach.map((step, index) => (
-            <div key={index}>
+          {study.processAndApproach.slice(0, 3).map((step, index) => (
+            <div className="card" key={index}>
               <h3>{step.title}</h3>
               <p>{step.details}</p>
             </div>
           ))}
-        </div>
-        <div className="card">
-          <h2>Testing</h2>
+
+          <img src={study.images[1]} alt={`${study.title} screenshot`} className="main-screenshot" />
+
           {study.processAndApproach.slice(3, 6).map((step, index) => (
-            <div key={index}>
+            <div className="card" key={index}>
               <h3>{step.title}</h3>
               <p>{step.details}</p>
             </div>
           ))}
-        </div>
 
-        <img src={study.images[2]} alt={`${study.title} screenshot`} className="main-screenshot" />
+          <img src={study.images[2]} alt={`${study.title} screenshot`} className="main-screenshot" />
 
-        <div className="card">
-          <h2>Project Specifics</h2>
           {study.processAndApproach.slice(6, 10).map((step, index) => (
-            <div key={index}>
+            <div className="card" key={index}>
               <h3>{step.title}</h3>
               <p>{step.details}</p>
             </div>
           ))}
-        </div>
-        <div className="card">
-          <h2>Challenges and Solutions</h2>
-          {study.challengesAndSolutions.map((item, index) => (
-            <div key={index}>
-              <h3>{item.challenge}</h3>
-              <p>{item.solution}</p>
-            </div>
-          ))}
-        </div>
-        <div className="card">
-          <h2>Conclusions and Reflections</h2>
-          <h3>Final Solution</h3>
-          <p>{study.conclusionAndReflections.finalSolution}</p>
-          <h3>Reflections</h3>
-          <p>{study.conclusionAndReflections.reflections}</p>
+
+          <div className="card">
+            <h3>Challenges and Solutions</h3>
+            {study.challengesAndSolutions.map((item, index) => (
+              <div key={index}>
+                <h4>{item.challenge}</h4>
+                <p>{item.solution}</p>
+              </div>
+            ))}
+          </div>
+
+          <div className="card">
+            <h3>Conclusions and Reflections</h3>
+            <h4>Final Solution</h4>
+            <p>{study.conclusionAndReflections.finalSolution}</p>
+            <h4>Reflections</h4>
+            <p>{study.conclusionAndReflections.reflections}</p>
+
+          </div>
+
+          <img src={study.images[3]} alt={`${study.title} screenshot`} className="main-screenshot" />
+          
         </div>
       </div>
     </div>

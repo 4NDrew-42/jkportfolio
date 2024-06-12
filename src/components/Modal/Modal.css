@@ -14,7 +14,6 @@
 
 .modalContent {
   background: white;
-  padding: 20px;
   border-radius: 5px;
   width: 80%; /* 5% offset on left and right */
   height: 90%; /* 5% offset on top and bottom */

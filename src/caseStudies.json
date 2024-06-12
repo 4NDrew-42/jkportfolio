@@ -47,7 +47,8 @@
       "images": [
         "images/pokedex/screenshot1.png",
         "images/pokedex/screenshot2.png",
-        "images/pokedex/screenshot3.png"
+        "images/pokedex/screenshot3.png",
+        "images/pokedex/screenshot4.png"
       ],
       "githubRepo": "https://github.com/4NDrew-42/CF1_10",
       "url": "https://pokedex-five-alpha.vercel.app/",
@@ -128,7 +129,8 @@
       "images": [
         "images/meetapp/screenshot1.png",
         "images/meetapp/screenshot2.png",
-        "images/meetapp/screenshot3.png"
+        "images/meetapp/screenshot3.png",
+        "images/meetapp/screenshot4.png"
       ],
       "githubRepo": "https://github.com/4NDrew-42/meet/tree/gh-pages",
       "url": "https://4ndrew-42.github.io/meet/",
@@ -138,7 +140,7 @@
       
       "title": "ChatApp",
       "subtitle": "Realtime messaging with Image and Location Sharing",
-      "overview": "The React Native Mobile Chat App is a dynamic and feature-rich application designed for mobile devices. It allows users to communicate in real-time, share images, and send location data. Developed using React Native and Expo, the app leverages Google Firestore Database for data storage and Firebase for authentication, showcasing a complete mobile development cycle from conception to deployment.",
+      "overview": "The React Native Mobile Chat App is a dynamic and feature-rich application designed for mobile devices. It allows users to communicate in real-time, share images, and send location data. Developed using React Native and Expo, the app leverages Google Firestore Database for data storage and Firebase for authentication.",
       "purposeAndContext": "The goal of this project was to create a robust and interactive mobile chat application that demonstrates proficiency in mobile development using JavaScript. The app is designed to provide a seamless user experience on both iOS and Android platforms, reflecting modern development practices in building high-quality, cross-platform mobile applications.",
       "objective": "To build a native chat application using React Native and Expo, providing features such as real-time messaging, image sharing, and location data exchange, all backed by a reliable and scalable backend with Google Firestore and Firebase authentication.",
       "toolsSkillsMethodologies": {
@@ -190,14 +192,15 @@
       "images": [
         "images/chatapp/screenshot1.png",
         "images/chatapp/screenshot2.png",
-        "images/chatapp/screenshot3.png"
+        "images/chatapp/screenshot3.png",
+        "images/chatapp/screenshot4.png"
       ],
       "githubRepo": "https://github.com/4NDrew-42/CF5-Chat/tree/CF5-5"
     },
     {
       "title": "ArtCine",
       "subtitle": "Full-Stack Movie Information Management",
-      "overview": "The ArtCine project represents a sophisticated full-stack development endeavor, featuring a server-side API and two distinct client-side implementations using React and Angular. This comprehensive approach not only demonstrates the flexibility of modern web technologies but also showcases how different frameworks can be leveraged to achieve similar end goals in diverse ways.",
+      "overview": "The ArtCine is a full-stack movies database, featuring a server-side API and two distinct client-side implementations using React and Angular. This comprehensive app demonstrates the flexibility of modern web technologies and showcases how different frameworks can be leveraged to achieve similar end goals in diverse ways.",
       "purposeAndContext": "This project was undertaken to showcase advanced skills in both backend and frontend development, emphasizing the ability to integrate seamlessly across different technology stacks. The objective was to provide a robust application that offers a dynamic and interactive experience for managing and viewing movie-related information.",
       "objective": "To create a comprehensive web application called ArtCine, where users can explore and manage information about movies, directors, and genres. The application consists of a RESTful API backend developed using Node.js and Express with a MongoDB database, and two frontend implementations—one in React and another in Angular.",
       "toolsSkillsMethodologies": {
@@ -241,7 +244,8 @@
       "images": [
         "images/artcine/screenshot1.png",
         "images/artcine/screenshot2.png",
-        "images/artcine/screenshot3.png"
+        "images/artcine/screenshot3.png",
+        "images/artcine/screenshot4.png"
       ],
       "githubRepo": "https://github.com/4NDrew-42/ArtCine-Angular/tree/ArtCine",
       "url": "https://4ndrew-42.github.io/ArtCine-Web/",
