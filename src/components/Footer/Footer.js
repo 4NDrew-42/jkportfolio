@@ -18,7 +18,7 @@ function Footer() {
         <a href="https://instagram.com">Instagram</a>
       </div>
       <p className="footer-disclaimer">
-        © 2024 by James. All rights reserved.
+        © 2024 James Klein. All rights reserved.
       </p>
     </footer>
   );

@@ -5,7 +5,7 @@ import caseStudiesData from '../../caseStudies.json';
 const Projects = ({ openModal }) => {
   return (
     <div className="projects">
-      <h2>Coding Case Studies</h2>
+      <h2>Case Studies</h2>
       <div className="carousel-container">
         {caseStudiesData.caseStudies.map((study) => (
           <div
