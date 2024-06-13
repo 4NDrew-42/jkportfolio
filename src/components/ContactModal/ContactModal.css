@@ -101,10 +101,19 @@
 }
 
 .contact-modal a {
-  color: #000; /* Change to desired color */
+  color: #007bff; /* Change to desired color */
   text-decoration: none; /* Remove underline */
+}
+
+.contact-modal a:visited {
+  color: #007bff; /* Ensures the visited link color remains the same */
+  text-decoration: none; /* Remove underline for visited links */
 }
 
 .contact-modal a:hover {
   text-decoration: underline; /* Optional: add underline on hover */
+}
+
+.contact-modal a:active {
+  color: #0056b3; /* Optional: change color on active state */
 }
