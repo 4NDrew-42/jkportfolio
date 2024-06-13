@@ -12,10 +12,9 @@ function Footer() {
         <a href="#content">Content</a>
       </div>
       <div className="footer-socials">
-        <a href="https://twitter.com">Twitter</a>
-        <a href="https://facebook.com">Facebook</a>
+        <a href="https://x.com/AetherSync">X</a>
         <a href="https://linkedin.com">LinkedIn</a>
-        <a href="https://instagram.com">Instagram</a>
+        <a href="https://medium.com/@jamesandrewklein">Medium</a>
       </div>
       <p className="footer-disclaimer">
         © 2024 James Klein. All rights reserved.
