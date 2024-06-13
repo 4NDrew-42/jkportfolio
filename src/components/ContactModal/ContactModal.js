@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import './ContactModal.css';
 import emailjs from 'emailjs-com';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faXTwitter, faLinkedin, faMedium } from '@fortawesome/free-brands-svg-icons';
 
 const ContactModal = ({ closeModal }) => {
   const [formData, setFormData] = useState({
@@ -47,11 +49,17 @@ const ContactModal = ({ closeModal }) => {
           <textarea name="message" value={formData.message} onChange={handleChange}></textarea>
           <input type="submit" value="Send" />
         </form>
-        <div className="modal-socials">
-          <a href="https://x.com/AetherSync">X</a>
-          <a href="https://linkedin.com">LinkedIn</a>
-          <a href="https://medium.com/@jamesandrewklein">Medium</a>
-        </div>
+        <div className="footer-socials">
+        <a href="https://x.com/AetherSync" target="_blank" rel="noopener noreferrer">
+          <FontAwesomeIcon icon={faXTwitter} />
+        </a>
+        <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
+          <FontAwesomeIcon icon={faLinkedin} />
+        </a>
+        <a href="https://medium.com/@jamesandrewklein" target="_blank" rel="noopener noreferrer">
+          <FontAwesomeIcon icon={faMedium} />
+        </a>
+      </div>
       </div>
     </div>
   );
