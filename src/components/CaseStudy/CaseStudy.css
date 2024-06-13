@@ -5,10 +5,16 @@
   background-color: #f0f0f0;
 }
 
+.modal-buttons {
+  
+  justify-content: space-between;
+  margin: 0px 20px 20px 20px;
+}
+
 .modal-header {
   display: flex;
   align-items: center;
-  margin-bottom: 20px;
+  margin-bottom: 0px;
 }
 
 .modal-icon {
@@ -21,12 +27,18 @@
 
 .modal-title-container {
   flex-grow: 1;
+  display: flex;
 }
 
 .modal-title {
   font-size: 1.5em;
   margin-bottom: 5px;
   font-weight: bold;
+}
+
+.modal-subtitle {
+  font-size: 1em;
+  margin-bottom: 25px;
 }
 
 .underline {
@@ -83,7 +95,7 @@
 .card p {
   font-size: 1em;
   line-height: 1.5;
-  margin-bottom: 10px;
+  margin-bottom: 0px;
 }
 
 @media (max-width: 1200px) {

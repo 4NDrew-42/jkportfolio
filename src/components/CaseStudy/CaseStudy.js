@@ -28,7 +28,8 @@ const CaseStudy = ({ studyId }) => {
           <img src={study.icon} alt={`${study.title} icon`} className="modal-icon" />
           <div>
             <div className="modal-title">{study.title}</div>
-            <h4>{study.subtitle}</h4>
+            <div className="underline"></div>
+            <div class="modal-subtitle">{study.subtitle}</div>
           </div>
         </div>
         <div className="modal-buttons">
@@ -40,12 +41,12 @@ const CaseStudy = ({ studyId }) => {
               <FontAwesomeIcon icon={faGlobe} /> Live Demo (React)
             </button>
           )}
-          <button className="button" onClick={() => window.open(study.githubRepo, '_blank')}>
+          <button className="button github-button" onClick={() => window.open(study.githubRepo, '_blank')}>
             <FontAwesomeIcon icon={faGithub} /> GitHub
           </button>
         </div>
       </div>
-      <div className="underline"></div>
+      
 
       <div className="column">
         <div className="media-container">
