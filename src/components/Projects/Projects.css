@@ -1,9 +1,4 @@
 /* Projects.css */
-h2 {
-  font-size: 3em;
-  margin: 0px;
-  padding: 40px 0px 30px 0px;
-}
 
 .projects {
   padding-left: 20px;
@@ -12,29 +7,28 @@ h2 {
 
 .carousel-container {
   display: flex;
-  flex-wrap: nowrap; /* Ensures items are in a single row on desktop */
+  flex-wrap: nowrap;
   gap: 20px;
-  overflow-x: auto; /* Enables horizontal scrolling */
+  overflow-x: auto;
   padding: 0px 40px 40px 20px;
 }
 
 @media (max-width: 600px) {
   .carousel-container {
     flex-direction: column;
-    flex-wrap: wrap; /* Ensures items stack vertically on mobile */
-    align-items: center; /* Center align the project cards */
+    align-items: center;
   }
 }
 
 .project-card {
   position: relative;
-  background-color: #eaeaea; /* Slight grey background */
-  border-radius: 20px; /* More rounded corners */
+  background-color: #eaeaea;
+  border-radius: 20px;
   min-width: 300px;
   max-width: 400px;
   min-height: 500px;
   margin: 10px;
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3); /* Increased darkness and size of drop shadow */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
   cursor: pointer;
   transition: transform 0.2s;
   display: flex;
@@ -42,16 +36,16 @@ h2 {
 }
 
 .project-card:hover {
-  transform: scale(1.02); /* Reduced scaling amount */
+  transform: scale(1.02);
 }
 
 .project-thumbnail {
   width: 100%;
-  height: 200px; /* Adjust height as needed */
+  height: 200px;
   background-size: cover;
   background-position: top left;
   background-repeat: no-repeat;
-  border-top-left-radius: 20px; /* Ensures the image follows the card's rounded corners */
+  border-top-left-radius: 20px;
   border-top-right-radius: 20px;
 }
 
@@ -64,53 +58,59 @@ h2 {
   text-align: justify;
 }
 
+.project-title {
+  font-size: 2em;
+  font-weight: bolder;
+  margin-top: 0;
+  padding: 20px 40px 10px 30px;
+  font-family: 'Roboto', sans-serif;
+}
+
 .title-container {
   display: flex;
-  flex-direction: row; /* Ensure title-container is row-aligned */
-  align-items: center; /* Align items vertically */
-  margin-top: -5px; /* Move baseline up by 5px */
+  align-items: center;
 }
 
 .project-icon {
-  width: 40px; /* Adjust size as needed */
-  height: 40px; /* Adjust size as needed */
-  border-radius: 10px; /* Slightly rounded corners */
-  margin-right: 10px; /* Space between icon and title */
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Add drop shadow to the icon */
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+  margin-right: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
 }
 
 .project-card h3 {
   margin-top: 0;
-  margin-bottom: 5px; /* Reduce margin-bottom to bring subtext closer */
-  font-size: 1.8em; /* Increase title font size */
+  margin-bottom: 5px;
+  font-size: 1.8em;
   position: relative;
-  flex-grow: 1; /* Ensure the title takes up available space */
+  flex-grow: 1;
 }
 
 .project-card h3::after {
   content: '';
   display: block;
-  width: 100%; /* Extend the line to cover the full width */
-  height: 2px; /* Thicker line */
+  width: 100%;
+  height: 2px;
   background: #ccc;
   margin-top: 5px;
 }
 
 .project-card h4 {
-  margin: 5px 0 10px 0; /* Adjust margin for subtext closer to the title */
+  margin: 5px 0 10px 0;
   font-size: 1em;
 }
 
 .project-card p {
   margin-bottom: 10px;
   flex-grow: 1;
-  font-size: 1em; /* Revert description font size */
+  font-size: 1em;
 }
 
 .buttons {
   display: flex;
   justify-content: space-between;
-  margin-top: auto; /* Ensures buttons are at the bottom */
+  margin-top: auto;
 }
 
 .button {
@@ -127,7 +127,7 @@ h2 {
 }
 
 .button.github-button {
-  background-color: #333; /* GitHub official dark theme color */
+  background-color: #333;
 }
 
 .button:hover {

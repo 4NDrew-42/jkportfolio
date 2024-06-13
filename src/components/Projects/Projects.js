@@ -5,7 +5,7 @@ import caseStudiesData from '../../caseStudies.json';
 const Projects = ({ openModal }) => {
   return (
     <div className="projects">
-      <h2>Case Studies</h2>
+      <div class="project-title">Case Studies</div>
       <div className="carousel-container">
         {caseStudiesData.caseStudies.map((study) => (
           <div
@@ -25,8 +25,12 @@ const Projects = ({ openModal }) => {
               <h4>{study.subtitle}</h4>
               <p>{study.overview}</p>
               <div className="buttons">
-                <a href={study.url} className="button" target="_blank" rel="noopener noreferrer">Live Demo</a>
-                <a href={study.githubRepo} className="button" target="_blank" rel="noopener noreferrer">GitHub</a>
+                {study.url && (
+                  <a href={study.url} className="button" target="_blank" rel="noopener noreferrer">Live Demo</a>
+                )}
+                {study.githubRepo && (
+                  <a href={study.githubRepo} className="button github-button" target="_blank" rel="noopener noreferrer">GitHub</a>
+                )}
               </div>
             </div>
           </div>
