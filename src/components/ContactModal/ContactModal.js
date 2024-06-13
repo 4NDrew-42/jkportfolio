@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import './ContactModal.css';
+import emailjs from 'emailjs-com';
 
 const ContactModal = ({ closeModal }) => {
   const [formData, setFormData] = useState({
@@ -32,10 +33,9 @@ const ContactModal = ({ closeModal }) => {
 
   return (
     <div className="modal-overlay">
-      <div className="modal-content">
+      <div className="modal-content contact-modal">
         <button className="close-button" onClick={closeModal}>X</button>
         <h2>Contact Me</h2>
-        
         
         <form id="contact-form" onSubmit={sendEmail}>
           <input type="hidden" name="contact_number" value="123456" />

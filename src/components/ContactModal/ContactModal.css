@@ -30,6 +30,20 @@
   padding-bottom: 20px;
 }
 
+.modal-title {
+  font-size: 1.5em;
+  margin-bottom: 5px;
+  font-weight: bold;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* Add shadow here */
+}
+
+@media (max-width: 600px) {
+  .modal-title {
+    font-size: 1.2em;
+  }
+}
+
+
 .close-button {
   position: absolute;
   top: 10px;
@@ -84,4 +98,13 @@
 
 .footer-socials a:hover {
   color: #0056b3;
+}
+
+.contact-modal a {
+  color: #000; /* Change to desired color */
+  text-decoration: none; /* Remove underline */
+}
+
+.contact-modal a:hover {
+  text-decoration: underline; /* Optional: add underline on hover */
 }

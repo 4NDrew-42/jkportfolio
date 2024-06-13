@@ -4,6 +4,7 @@ import ContactModal from '../ContactModal/ContactModal';
 
 const Navbar = () => {
   const [showContactModal, setShowContactModal] = useState(false);
+  const [isOpen, setIsOpen] = useState(false);
 
   const openContactModal = () => {
     setShowContactModal(true);
@@ -13,10 +14,17 @@ const Navbar = () => {
     setShowContactModal(false);
   };
 
+  const handleToggle = () => {
+    setIsOpen(!isOpen);
+  };
+
   return (
     <nav className="navbar">
-      <h1>James Klein Portfolio</h1>
-      <ul>
+      <h1 className="navbar-title">James Klein Portfolio</h1>
+      <div className="hamburger" onClick={handleToggle}>
+        &#9776;
+      </div>
+      <ul className={`nav-links ${isOpen ? 'open' : ''}`}>
         <li><a href="#projects">Projects</a></li>
         <li><a href="#content">Content</a></li>
         <li><a href="#clients">Clients</a></li>

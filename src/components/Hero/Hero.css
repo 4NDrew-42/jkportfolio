@@ -1,5 +1,7 @@
+/* Hero.css */
+
 .hero {
-  height: 50vh; /* Reduced height */
+  height: 50vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -12,21 +14,58 @@
 .hero img.profile-pic {
   width: 200px;
   height: 200px;
-  border-radius: 50%; /* Circular profile picture */
-  margin-bottom: 20px; /* Space between image and text */
+  border-radius: 50%;
+  margin-bottom: 20px;
   box-shadow: 0 14px 18px rgba(0, 0, 0, 0.3);
 }
 
 .hero-title {
   font-size: 3em;
+  font-family: 'Playfair Display', serif;
   color: #c7c7c7;
   align-items: center;
   justify-content: center;
   padding-left: 20px;
-  box-shadow: 10px, 10px #2f4474;
+  text-shadow: 5px 5px 20px black;
 }
 
 .hero h1 {
   font-size: 2.5em;
   color: #c7c7c7;
+}
+
+@media (max-width: 1200px) {
+  .hero-title {
+    font-size: 2.5em;
+  }
+  .hero h1 {
+    font-size: 2.2em;
+  }
+}
+
+@media (max-width: 900px) {
+  .hero-title {
+    font-size: 2em;
+  }
+  .hero h1 {
+    font-size: 2em;
+  }
+}
+
+@media (max-width: 600px) {
+  .hero-title {
+    font-size: 1.8em;
+  }
+  .hero h1 {
+    font-size: 1.5em;
+  }
+}
+
+@media (max-width: 400px) {
+  .hero-title {
+    font-size: 1.5em;
+  }
+  .hero h1 {
+    font-size: 1.2em;
+  }
 }
