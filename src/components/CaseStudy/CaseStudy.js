@@ -1,6 +1,9 @@
 import React from 'react';
 import './CaseStudy.css';
 import caseStudiesData from '../../caseStudies.json';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faGithub } from '@fortawesome/free-brands-svg-icons';
+import { faGlobe } from '@fortawesome/free-solid-svg-icons';
 
 const CaseStudy = ({ studyId }) => {
   const study = caseStudiesData.caseStudies.find(cs => cs.title === studyId);
@@ -9,16 +12,40 @@ const CaseStudy = ({ studyId }) => {
     return <div>Case study not found.</div>;
   }
 
+  const handleLiveDemo = () => {
+    if (study.title === 'ChatApp') {
+      alert('Sorry, no live demo exists for Chat App. Please follow the README on GitHub and use your favored emulator to run the emulation.');
+    } else {
+      window.open(study.url, '_blank');
+    }
+  };
+
+
   return (
     <div className="case-study">
       <div className="modal-header">
-        <img src={study.icon} alt={`${study.title} icon`} className="modal-icon" />
         <div className="modal-title-container">
-          <div className="modal-title">{study.title}</div>
-          <h4>{study.subtitle}</h4>
-          <div className="underline"></div>
+          <img src={study.icon} alt={`${study.title} icon`} className="modal-icon" />
+          <div>
+            <div className="modal-title">{study.title}</div>
+            <h4>{study.subtitle}</h4>
+          </div>
+        </div>
+        <div className="modal-buttons">
+          <button className="button" onClick={handleLiveDemo}>
+            <FontAwesomeIcon icon={faGlobe} /> Live Demo
+          </button>
+          {study.title === 'ArtCine' && (
+            <button className="button" onClick={() => window.open(study.url2, '_blank')}>
+              <FontAwesomeIcon icon={faGlobe} /> Live Demo (React)
+            </button>
+          )}
+          <button className="button" onClick={() => window.open(study.githubRepo, '_blank')}>
+            <FontAwesomeIcon icon={faGithub} /> GitHub
+          </button>
         </div>
       </div>
+      <div className="underline"></div>
 
       <div className="column">
         <div className="media-container">

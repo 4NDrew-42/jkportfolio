@@ -124,6 +124,7 @@
   text-align: center;
   transition: background-color 0.3s;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  border-color: #007bff;
 }
 
 .button.github-button {
