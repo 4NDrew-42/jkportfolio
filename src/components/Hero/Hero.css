@@ -1,137 +1,58 @@
-/* Hero.css */
-
-.hero {
-  height: 50vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  background-color: #2f4474;
-  padding: 20px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-.hero img.profile-pic {
-  width: 200px;
-  height: 200px;
-  border-radius: 50%;
-  margin-bottom: 20px;
-  box-shadow: 0 14px 18px rgba(0, 0, 0, 0.3);
-}
-
-.hero-title {
-  font-size: 3em;
-  font-family: 'Playfair Display', serif;
-  color: #c7c7c7;
-  align-items: center;
-  justify-content: center;
-  padding-left: 20px;
-  text-shadow: 5px 5px 20px black;
-}
-
-.hero h1 {
-  font-size: 2.5em;
-  color: #c7c7c7;
-}
-
-@media (max-width: 1200px) {
-  .hero-title {
-    font-size: 2.5em;
-  }
-  .hero h1 {
-    font-size: 2.2em;
-  }
-}
-
-@media (max-width: 900px) {
-  .hero-title {
-    font-size: 2em;
-  }
-  .hero h1 {
-    font-size: 2em;
-  }
-}
-
-@media (max-width: 600px) {
-  .hero-title {
-    font-size: 1.8em;
-  }
-  .hero h1 {
-    font-size: 1.5em;
-  }
-}
-
-@media (max-width: 400px) {
-  .hero-title {
-    font-size: 1.5em;
-  }
-  .hero h1 {
-    font-size: 1.2em;
-  }
-}
-
+/* Container that centers both image and text */
 .container {
-  display: grid;
-  grid-template-columns: 0.5fr 1fr 2.5fr 0.5fr;
-  grid-template-rows: 0.5fr 2fr 0.5fr 0.5fr;
-  gap: 0px 0px;
-  grid-auto-flow: row dense;
-  grid-template-areas:
-    ". . . ."
-    ". buttons greet ."
-    ". buttons greet ."
-    ". . . .";
-    background-color: #2f4474;
-}
-
-.pic { 
-  justify-content: center;
-  align-items: center;
-  grid-area: pic;
-  width: 200px;
-  height: 200px;
-  border-radius: 50%;
-  margin-bottom: 10px;  
-  box-shadow: 0 14px 18px rgba(0, 0, 0, 0.3);
-}
-
-.greet { 
-  grid-area: greet; 
-}
-
-.buttons { 
-  grid-area: buttons;
   display: flex;
-  flex-direction: column;  
-  align-items: center;  
-  gap: 10px;  
+  flex-direction: column; /* Stack image and text vertically */
+  justify-content: center; /* Center vertically */
+  align-items: center; /* Center horizontally */
+  padding: 40px; /* Add padding for space around content */
+  height: 50vh; /* Make container take full height of the viewport */
+  background-color: #2f4474; /* Background color */
+  box-sizing: border-box; /* Ensures padding and border are included in width/height */
 }
 
-.abutton {
-  margin-top: 10px;
-  padding: 5px 10px; 
-  border: none;
-  background-color: #272b30;
-  color: white;
-  border-radius: 5px;
-  font-size: 12px;  
-  text-decoration: none;  
-  width: 160px;
-  text-align: center;
+/* Styles for the picture */
+.pic img {
+  width: 150px; /* Set a fixed width for the image */
+  height: 150px; /* Set a fixed height for the image */
+  border-radius: 50%;
+  box-shadow: 0 14px 18px rgba(0, 0, 0, 0.3);
+  margin-bottom: 20px; /* Add space between the image and text */
 }
 
-/* Media Query for Mobile Screens */
+/* Styles for the greeting text */
+.greet {
+  text-align: center; /* Center the text */
+  color: #c7c7c7; /* Text color */
+  text-shadow: 5px 5px 20px black; /* Add shadow to the text */
+  max-width: 700px; /* Limit the width of the text to ensure it doesn't stretch too far */
+}
+
+/* Headings and paragraphs */
+.greet h1 {
+  font-size: 1.5rem; /* Ensure consistent size for the heading */
+  margin-bottom: 10px;
+}
+
+.greet p {
+  font-size: 1.2em; /* Consistent paragraph size */
+  line-height: 1.6; /* Spacing between lines */
+}
+
+/* Responsive adjustments for smaller screens */
 @media (max-width: 600px) {
   .container {
-    margin: auto;
-    grid-template-columns: 1fr;
-    grid-template-rows: auto auto auto;
-    grid-template-areas:
-      "pic"
-      "greet"
-      "buttons";
+    padding: 20px; /* Reduce padding on smaller screens */
   }
-  .pic, .greet, .buttons {
-    margin: 0 auto;
+
+  .greet {
+    max-width: 90%; /* Allow text to use more width on smaller screens */
+  }
+
+  .greet h1 {
+    font-size: 1.3rem; /* Slightly smaller text on smaller screens */
+  }
+
+  .greet p {
+    font-size: 1em; /* Consistent paragraph size on smaller screens */
   }
 }

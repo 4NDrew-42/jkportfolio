@@ -5,13 +5,7 @@ import { faXTwitter, faLinkedin, faMedium } from '@fortawesome/free-brands-svg-i
 function Footer() {
   return (
     <footer className="footer">
-      <div className="footer-links">
-        <a href="#home">Home</a>
-        <a href="#about">About</a>
-        <a href="#projects">Projects</a>
-        <a href="#clients">Clients</a>
-        <a href="#content">Content</a>
-      </div>
+      
        <div className="footer-socials">
         <a href="https://x.com/AetherSync" target="_blank" rel="noopener noreferrer">
           <FontAwesomeIcon icon={faXTwitter} />
