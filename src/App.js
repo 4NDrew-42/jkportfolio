@@ -9,6 +9,9 @@ import Clients from './components/Clients/Clients';
 import Modal from './components/Modal/Modal';
 import CaseStudy from './components/CaseStudy/CaseStudy';
 import caseStudiesData from './caseStudies.json';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faFacebook, faTwitter } from '@fortawesome/free-brands-svg-icons';
+
 
 function App() {
   const [showModal, setShowModal] = useState(false);

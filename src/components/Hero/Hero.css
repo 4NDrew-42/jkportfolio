@@ -69,3 +69,69 @@
     font-size: 1.2em;
   }
 }
+
+.container {
+  display: grid;
+  grid-template-columns: 0.5fr 1fr 2.5fr 0.5fr;
+  grid-template-rows: 0.5fr 2fr 0.5fr 0.5fr;
+  gap: 0px 0px;
+  grid-auto-flow: row dense;
+  grid-template-areas:
+    ". . . ."
+    ". buttons greet ."
+    ". buttons greet ."
+    ". . . .";
+    background-color: #2f4474;
+}
+
+.pic { 
+  justify-content: center;
+  align-items: center;
+  grid-area: pic;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  margin-bottom: 10px;  
+  box-shadow: 0 14px 18px rgba(0, 0, 0, 0.3);
+}
+
+.greet { 
+  grid-area: greet; 
+}
+
+.buttons { 
+  grid-area: buttons;
+  display: flex;
+  flex-direction: column;  
+  align-items: center;  
+  gap: 10px;  
+}
+
+.abutton {
+  margin-top: 10px;
+  padding: 5px 10px; 
+  border: none;
+  background-color: #272b30;
+  color: white;
+  border-radius: 5px;
+  font-size: 12px;  
+  text-decoration: none;  
+  width: 160px;
+  text-align: center;
+}
+
+/* Media Query for Mobile Screens */
+@media (max-width: 600px) {
+  .container {
+    margin: auto;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto;
+    grid-template-areas:
+      "pic"
+      "greet"
+      "buttons";
+  }
+  .pic, .greet, .buttons {
+    margin: 0 auto;
+  }
+}

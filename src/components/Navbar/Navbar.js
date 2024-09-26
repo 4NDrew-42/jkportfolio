@@ -20,14 +20,13 @@ const Navbar = () => {
 
   return (
     <nav className="navbar">
-      <h1 className="navbar-title">James Klein Portfolio</h1>
+      <h1 className="navbar-title">JK</h1>
       <div className="hamburger" onClick={handleToggle}>
         &#9776;
       </div>
       <ul className={`nav-links ${isOpen ? 'open' : ''}`}>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#content">Content</a></li>
-        <li><a href="#clients">Clients</a></li>
+        <li><a href="#projects">Coding Projects</a></li>
+        <li><a href="https://www.jkphotography.website/" target="_blank">Legacy Site</a></li>
         <li><a href="#" onClick={openContactModal}>Contact</a></li>
       </ul>
       {showContactModal && <ContactModal closeModal={closeContactModal} />}
